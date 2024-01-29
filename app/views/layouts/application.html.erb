@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
-<% 
-=begin
-%>
-
   <head>
     <title>HiroBlogapp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+<%
+=begin
+%>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,6 +18,9 @@
       <p class="ehader_pageTitle">新着記事</p>
       <div class="dropdown">
         <%= image_tag 'default-avatar.png', class: 'header_avatar dropbtn' %>
+<%
+=end
+%>
         <div class="dropdown-content">
           <a href="#">プロフィール</a>
           <a href="#">ログアウト</a>
@@ -26,10 +28,5 @@
       </div>
     </header>
     <%= yield %>
-  </body>
-
-<%
-=end
-%>
-
+  </body> 
 </html>
