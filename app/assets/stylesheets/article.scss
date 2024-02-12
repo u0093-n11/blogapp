@@ -19,12 +19,17 @@ $avatar-size: 32px;
     position: relative;
 
     img {
+      cursor: pointer;
       width: $avatar-size;
       height: $avatar-size;
       border-radius: 100%;
       margin-right: 16px;
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> e875f1de4bbe5a4e0b7113205191da8d2e6125c0
     &_actions {
       right: 0px;
       position: absolute;
