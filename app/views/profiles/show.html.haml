@@ -4,7 +4,7 @@
       = image_tag 'default-avatar.png'
     .profilePage_user_basicInfo 
       .profilePage_user_displayName 
-        #{current_user.display_name} (#{current_user.age}・#{current_user.gender})
+        #{current_user.display_name} (#{current_user.age}・#{I18n.t("enum.genders.#{current_user.gender}")})
       .profilePage_user_actionButton
         = link_to 'Edit', edit_profile_path 
     .profilePage_user_introduction
